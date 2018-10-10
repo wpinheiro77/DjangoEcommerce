@@ -1,0 +1,178 @@
+/*==============================================
+[Main stylesheet style01.css]
+
+Author:	William Pinheiro
+Version:	1.0
+Created:	20 september 2018
+Last updated:	20 september 2018
+Template:	Retrobits
+================================================*/
+/*
+[Table of Contents]
+
+1. GENERAL
+2. NAV
+3. BANNER
+4. PODCAST
+5. FOOTER
+6. MEDIA QUERY
+*/
+
+/*===============================*/
+/* 1. GENERAL 					      	 */
+/*===============================*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  color: #FFF;
+}
+
+a{
+  text-decoration: none;
+  color: #383838 !important;
+}
+
+.active a,
+a:hover {
+  color: #FF9300 !important;
+}
+
+
+/*===============================*/
+/* 2. NAV      					      	 */
+/*===============================*/
+.nav-top {
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(51,51,51,1);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(51,51,51,1);
+  box-shadow: 0px 0px 4px 0px rgba(51,51,51,1);
+}
+
+.logo img {
+  height: 30px;
+}
+
+.menu li {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-left: 25px;
+}
+
+/*===============================*/
+/* 3. BANNER   					      	 */
+/*===============================*/
+.banner-top {
+  background-image: url(../images/gamer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  height: 330px;
+  max-height: 330px;
+  margin-top: 60px;
+}
+
+/*===============================*/
+/* 4. PODCAST 					      	 */
+/*===============================*/
+.podcast-post {
+  width: 70%;
+  max-width: 1030px;
+  min-width: 630px;
+  margin: auto;
+  background: #FFF;
+  padding: 20px;
+  margin-top: -40px;
+  margin-bottom: 70px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(170,170,170,1);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(170,170,170,1);
+  box-shadow: 0px 0px 3px 1px rgba(170,170,170,1);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.img-destaque {
+  width: 30%;
+}
+
+.img-destaque img {
+  height: 160px;
+}
+
+.podcast-content {
+  width: 70%;
+  float: right;
+  margin-top: -150px;
+}
+
+.podcast-content h1 {
+  color: #FF9300;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.podcast-description p {
+  color: #212121;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.podcast-data {
+  margin-top: -10px;
+}
+
+.podcast-data p {
+  color: #8e8e8e;
+  font-weight: 600;
+}
+
+.plus {
+  color: #383838;
+  background: #FF9300;
+  padding: 5px;
+  float: right;
+  margin-right: -20px;
+  margin-top: -40px;
+}
+
+/*===============================*/
+/* 6. MEDIA QUERY 			      	 */
+/*===============================*/
+@media (max-width: 768px) {
+  .banner-top {
+    margin-top: 40px;
+  }
+  .logo img {
+    height: 25px;
+  }
+  .img-destaque {
+    padding-left: 25%;
+    width:auto;
+    max-width:100%; 
+  }
+  .podcast-title {
+    margin-top: -15px;
+    margin-bottom: 15px
+  }
+  .podcast-post {
+    height: 472px;
+    width: 320px;
+    min-width: 160px;
+  }
+  .podcast-content {
+    margin-top: 50px;
+    width: 90%;
+  }
+  .podcast-description {
+    font-size: 0.8em;
+  }
+  .plus {
+    margin-top: -3px;
+    margin-right: -20px;
+  }
+}
